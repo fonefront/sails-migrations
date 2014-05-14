@@ -14,3 +14,17 @@ npm-debug.log
 node_modules
 samples/example_app0.9.8/db/**/*
 samples/example_app0.10/db/**/*
+
+*~
+*#
+.DS_STORE
+.idea
+*.orig
+*.ejs.BACKUP.*.ejs
+*.ejs.BASE.*.ejs
+*.ejs.LOCAL.*.ejs
+*.ejs.REMOTE.*.ejs
+*.js.BACKUP.*.js
+*.js.BASE.*.js
+*.js.LOCAL.*.js
+*.js.REMOTE.*.js

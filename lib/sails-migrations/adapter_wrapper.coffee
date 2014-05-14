@@ -22,6 +22,12 @@ class Adapter
       @adapter.addAttribute(tableName, attrName, attrDef, cb)
     )
 
+  renameAttribute: (tableName, oldAttrName, newAttrName, cb)->
+    @registerCollection(tableName, (err)=>
+      return cb(err) if err
+      @adapter.renameAttribute(tableName, oldAttrName, newAttrName, cb)
+    )
+
   removeAttribute: (tableName, attrName, cb)->
     @registerCollection(tableName, (err)=>
       return cb(err) if err
